@@ -1,3 +1,56 @@
-p {
-  font-weight: bold;
+:root {
+    --dark-text-color: #5E495B;
+    --main-text-color: #666666;
+    --green-color: #0B949F;
+    --accent-color: #E96057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-text-color);
+    font-size: 18px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* header start */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark-text-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header a:hover {
+    color: var(--accent-color);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    min-height: 100%;
+}
+
+header ul li {
+    margin: 0 20px; 
 }
