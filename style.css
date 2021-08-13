@@ -27,6 +27,16 @@ body {
     margin: 0 auto;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--green-color);
+    text-transform: uppercase;
+    margin: 20px 0 15px 0;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
 /* header start */
 
 nav {
@@ -85,9 +95,22 @@ header ul li {
 }
 
 .full-width-banner img {
-    z-index: -1;
+    z-index: -2;
     position: absolute;
     width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.full-width-banner .img-filter::before {
+    content: '';
+    position: absolute;  
+    background-image: url(./img/dark-stripes.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .full-width-banner h1 {
@@ -159,3 +182,90 @@ header ul li {
     width: 100%;
     display: block;
 }
+
+.homepage-form form {
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.homepage-form form label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.homepage-form form select, .homepage-form form input {
+    width: 100%;
+    padding: 6px 12px;
+    color: var(--dark-text-color);
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--main-text-color);
+    line-height: 1.5;
+}
+
+.homepage-form form .form-button {
+    background-color: #337ab7;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 25px;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.65;
+    border-radius: 4px;
+    border: none;
+}
+
+.homepage-form form .form-button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* advantages start */
+
+section.advantage-block {
+    padding: 50px 0 30px 0;
+}
+
+.card-block {
+    display: flex;
+}
+
+.card-item {
+    padding: 25px 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+    box-shadow: 0px 10px 31px 0px rgba(11, 148, 159, 0.09);
+    margin: 0 15px;
+    border-bottom: 2px solid transparent;
+    transition: all;
+    transition-duration: 0.5s;
+    text-align: center;
+}
+
+.card-item img {
+    margin-bottom: 20px;
+}
+
+.card-item:hover {
+    border-color: var(--green-color);
+    box-shadow: 0px 10px 20px 0px rgba(11, 148, 159, 0.2);
+}
+
+p.card-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--dark-text-color);
+    margin: 20px 0 10px 0;
+}
+
+p.card-description {
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+/* advantages end */
