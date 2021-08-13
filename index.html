@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ac730f2a59.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,7 +35,9 @@
     </header>
 
     <div class="full-width-banner">
-        <img src="img/tyler-clemmensen-d1Jum1vVLew-unsplash.jpg" alt="Audi"> <!-- https://unsplash.com/photos/d1Jum1vVLew -->
+        <div class="img-filter">
+            <img src="img/tyler-clemmensen-d1Jum1vVLew-unsplash.jpg" alt="Audi"> <!-- https://unsplash.com/photos/d1Jum1vVLew -->
+        </div>
         <div class="container">
             <div class="homepage-columns">
                 <div class="homepage-text">
@@ -148,11 +151,42 @@
                         <label for="GET-mileage">Mileage:</label>
                         <input type="text" id="GET-mileage">
 
-                        <input type="submit" value="Get a free quote">
+                        <input class="form-button" type="submit" value="Get a free quote">
                     </form>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        <section class="advantage-block">
+            <h2>Cover the repair of your car</h2>
+            <div class="card-block">
+                <div class="card-item">
+                    <img src="img/user.png" height="100px" width="100px" alt="Experience">
+                    <p class="card-title">30 Years of Experience</p>
+                    <p class="card-description">Our well-established professionals are the best in the business. We’ll have your repairs done promptly and efficiently. Customer Satisfaction Guaranteed!</p>
+                </div>
+
+                <div class="card-item">
+                    <img src="img/phone.png" height="100px" width="100px" alt="Unlimited Calls">
+                    <p class="card-title">Unlimited Service Calls</p>
+                    <p class="card-description">When the inevitable breakdown happens, our highly trained and recommended service agents are available 24/7 to help you through each step! There is no limit to the amount of claims you can make.</p>
+                </div>
+
+                <div class="card-item">
+                    <img src="img/shield.png" height="100px" width="100px" alt="Protection">
+                    <p class="card-title">Protection Guarantee</p>
+                    <p class="card-description">If your covered part cannot be repaired, we will replace it.*</p>
+                </div>
+
+                <div class="card-item">
+                    <img src="img/cash-pay.png" height="100px" width="100px" alt="Plans">
+                    <p class="card-title">Payment Plans</p>
+                    <p class="card-description">At Select Auto Protect - we understand that auto repairs can be unexpected and costly. For this reason we offer various payment plans for our customers.</p>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
