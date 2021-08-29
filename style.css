@@ -299,6 +299,21 @@ p.block-small {
 
 /* advantages end */
 
+/* why us start */
+
+.why-us p {
+    font-weight: 300;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-us b {
+    font-weight: 700;
+}
+
+/* why us end */
+
 /* footer start */
 
 footer {
